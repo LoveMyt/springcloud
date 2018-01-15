@@ -1,0 +1,21 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/LoveMyt/SpringcloudConfig/
+          search-paths: respo
+          username: 515745488@qq.com
+          password: 515745488xzm
+      label: master
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+management:
+  security:
+    enabled: false
